@@ -2,4 +2,3 @@ flask-login
 flask
 Pillow
 webp
-pandas
