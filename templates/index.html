@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload an image</title>
+</head>
+<body>
+    <a href="{{ url_for('logout') }}">Logout</a>
+    <h1>Upload an image</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
