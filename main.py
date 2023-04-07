@@ -222,7 +222,7 @@ def upload_file():
 
 
             # delete the file from the server
-            #os.remove(new_path)
+            os.remove(new_path)
             return send_file(file_stream, as_attachment=True,
                              download_name=new_filename, mimetype='video/mp4')
     #return
