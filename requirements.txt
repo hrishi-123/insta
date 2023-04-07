@@ -2,3 +2,4 @@ flask-login
 flask
 Pillow
 webp
+moviepy
