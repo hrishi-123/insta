@@ -207,7 +207,7 @@ def upload_file():
             video = VideoFileClip(filepath)
             logoed_video = add_logo(video, LOGO_PATH)
             watermarked_video = add_watermark(logoed_video, WATERMARK_PATH)
-            new_filename = filename.split(' ')[0] + '.mp4'
+            new_filename = filename.split('.')[0].split(' ')[0] + '.mp4'
             new_path = os.path.join(app.root_path, 'static/uploads', new_filename)
             watermarked_video.write_videofile(new_path, codec='libx264')
             os.remove(filepath)
